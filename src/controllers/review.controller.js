@@ -118,7 +118,8 @@ export const getAllReviewsForBook = async (req, res, next) => {
         where: {
             id: req.params.bookId,
         },
-        include: [{ model: Review }]
+        include: [{ model: Review }],
+        attributes: ['id']
     })
 
     return res.status(200).json({ success: true, data: reviews });

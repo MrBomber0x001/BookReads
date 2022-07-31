@@ -9,9 +9,13 @@ Head over to [Documentation.md](./Doc.md)
 
 ## Demo and Features
 
-**Authentication (Login/Signup)**
+**Chatting**
 
-**Pooling a car**
+**Selling and buying**
+
+**Reviewing**
+
+**Authentication (Login/Signup)**
 
 **User profile and notifications**
 

@@ -52,20 +52,19 @@ User can only delete his own project
   - [ ] Upload a cover and avatar to project
 - [ ] Can
   - [ ] Add/remove Books to favirote
+  - [ ] Update status (READ, TO READ, READING)
+  - [ ] Update Progress (in_page) # use hooks for percentage_progress
   - [ ] Follow Author
   - [ ] Follow Other Readers/unFollow
-  - [ ] Make Shelfs and add Books to them
+  - [x] Make Shelfs and add Books to them
   - [ ] Make Request to join a group (if he's a group owner, he can see list of Request)
-  - [ ] like posts, share post
+  - [ ] like review, share post
 
 - [ ] Comments
 
 - [ ] Notifications
 
 - [ ] Books:
-  - [ ] Add to Favirote
-  - [ ] Update status (READ, TO READ, READING)
-  - [ ] Update Progress (in_page) # use hooks for percentage_progress
 
 ## Ideas
 

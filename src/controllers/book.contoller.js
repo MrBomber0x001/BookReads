@@ -61,6 +61,9 @@ export const addBookToShelf = async (req, res, next) => {
 export const getBooksUnderShelf = async (req, res, next) => {
     try {
         const books = await Shelf.findAll({
+            where: {
+                id: req.params.shelfId
+            },
             include: [{ model: Book }],
             attributes: ['id']
         })

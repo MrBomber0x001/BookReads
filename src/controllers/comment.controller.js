@@ -56,3 +56,17 @@ export const getCommentById = async (req, res, next) => {
         return res.status(500).json({ success: false, msg: error.message })
     }
 }
+
+
+export const addCommentToResource = async (req, res, next) => {
+    const { resourceType } = req.query;
+
+    switch (resourceType) {
+        case "Review":
+            const addToReview = ///
+            break;
+        case "Comment":
+            const addToComment = //
+    }
+}
+
