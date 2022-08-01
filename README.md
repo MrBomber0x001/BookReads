@@ -19,6 +19,12 @@ Head over to [Documentation.md](./Doc.md)
 
 **User profile and notifications**
 
+**Club**
+
+**Buying From stores**
+
+**Selling your used books**
+
 ## Installing and Setup
 
 ## Running Tests
