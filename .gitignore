@@ -1,3 +1,6 @@
 node_modules
 learning
 db.sql
+
+uploads/books
+uploads/reader

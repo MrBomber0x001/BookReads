@@ -23,6 +23,9 @@ export const Book = sequelize.define("books", {
     },
     rate: {
         type: DataTypes.INTEGER
+    },
+    bookImg: {
+        type: DataTypes.STRING
     }
 })
 

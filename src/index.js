@@ -11,7 +11,7 @@ import './models/Shelf.js';
 async function main() {
     try {
         // await sequelize.authenticate(); // for authenticating and testing
-        await sequelize.sync({ force: false }); // to start models { force: true }
+        await sequelize.sync({ force: true }); // to start models { force: true }
         console.log("Connection has been established succesfully!");
         app.listen(3000, () => {
             console.log(`:rocket: is running`)

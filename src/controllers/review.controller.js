@@ -3,7 +3,7 @@ import { Review } from '../models/Review.js'
 import { Book } from '../models/Book.js'
 /**
  * @Author Yousef Meska
- * @route [POST]`/api/v1/reviews/:bookId`
+ * @route [POST]`/api/v1/reviews/:bookId/`
  * @access private
  */
 export const createReview = async (req, res, next) => {

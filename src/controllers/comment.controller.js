@@ -58,15 +58,15 @@ export const getCommentById = async (req, res, next) => {
 }
 
 
-export const addCommentToResource = async (req, res, next) => {
-    const { resourceType } = req.query;
+// export const addCommentToResource = async (req, res, next) => {
+//     const { resourceType } = req.query;
 
-    switch (resourceType) {
-        case "Review":
-            const addToReview = ///
-            break;
-        case "Comment":
-            const addToComment = //
-    }
-}
+//     switch (resourceType) {
+//         case "Review":
+//             const addToReview = ///
+//             break;
+//         case "Comment":
+//             const addToComment = //
+//     }
+// }
 
