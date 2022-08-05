@@ -8,6 +8,9 @@ import './models/Reader.js';
 import './models/Store.js';
 import "./models/Store.js";
 import './models/Shelf.js';
+import './models/Club.js'
+import './models/book_status.js'
+
 async function main() {
     try {
         // await sequelize.authenticate(); // for authenticating and testing

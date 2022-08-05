@@ -4,24 +4,32 @@ import { Reader } from './Reader.js';
 import { Book } from './Book.js';
 
 
+
+
+
 export const Book_status = sequelize.define("Book_status", {
+    id: {
+        primaryKey: true,
+        type: DataTypes.INTEGER,
+        autoIncrement: true
+    },
     status: {
         type: DataTypes.STRING,
     },
-    readerId: {
-        type: DataTypes.INTEGER,
-        references: {
-            model: Reader,
-            key: "id"
-        }
-    },
-    bookId: {
-        type: DataTypes.INTEGER,
-        references: {
-            model: Book,
-            key: "id"
-        }
-    },
+    // readerId: {
+    //     type: DataTypes.INTEGER,
+    //     references: {
+    //         model: Reader,
+    //         key: "id"
+    //     }
+    // },
+    // bookId: {
+    //     type: DataTypes.INTEGER,
+    //     references: {
+    //         model: Book,
+    //         key: "id"
+    //     }
+    // },
     progress: {
         type: DataTypes.INTEGER
     },

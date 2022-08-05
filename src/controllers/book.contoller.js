@@ -1,11 +1,24 @@
 import { Op } from 'sequelize';
 import { Book } from '../models/Book.js'
 import { Book_status } from '../models/book_status.js';
+import { Reader } from '../models/Reader.js';
 import { Shelf } from '../models/Shelf.js';
 export const createBook = async (req, res, next) => {
     try {
         const newBook = await Book.create(req.body);
         await newBook.save();
+
+        //TODO: create CategoryBook and Category
+        const category = await Categroy.findOne({ where: { name: req.body.category } });
+        if (!category) {
+            return res.status(404).json({ success: false, msg: `${req.body.category} doesn't exist as valid category` });
+        }
+
+        await CategoryBook.create({
+            bookId: newBook.id,
+            categoryId: category.id
+        })
+
         return res.status(200).send({ success: true, data: newBook });
     } catch (error) {
         return res.status(500).json({ error: error.message })
@@ -161,7 +174,9 @@ export const changeStatus = async (req, res, next) => {
  * @returns 
  */
 export const getAllBookStatus = async (req, res, next) => {
-    const allBookStatus = await Book_status.findAll({});
+    const allBookStatus = await Book_status.findAll({
+        include: [{ model: Book }]
+    });
     return res.status(200).json({ success: true, data: allBookStatus });
 }
 
@@ -179,9 +194,34 @@ export const getAllBooksByStatusForUser = async (req, res, next) => {
                 readerId: req.params.readerId,
                 status: req.params.status
             }
-        }
+        },
+        include: [
+            { model: Book }
+        ]
     })
-    return res.status(200).json({ success: true, data: books });
+    const anotherData = await Reader.findAll({
+        where: {
+            id: req.params.readerId
+        },
+        attributes: ['id'],
+        include: [{
+            model: Book_status,
+            where: {
+                status: req.params.status
+            }
+        }]
+    })
+
+    const Books = await Book.findAll({
+        include: [{
+            model: Book_status,
+            where: {
+                status: req.params.status
+            },
+            attributes: []
+        }]
+    })
+    return res.status(200).json({ success: true, data: books, anotherData, Books });
 }
 //TODO: use transactions
 

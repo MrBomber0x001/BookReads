@@ -8,27 +8,6 @@
 
 ## API endpoints
 
-BASE: /api/
-User can only delete his own project
-
-- [ ] User
-    GET /user/:id (get user profile)
-    PUT /user/:id (update user profile)
-- [ ] ME
-
-    GET /me (get authenticated user profile)
-    UPDATE /me (update user profile)
-    DELETE /me (DELETE the authenticated profile)
-
-- [ ] Project
-  - [ ]
-
-- [ ] Tasks
-
-- [x] Auth
-  - [x] POST /auth/login
-  - [x] POST /auth/signup
-
 ## Building and Running
 
 ## Running PostgreSQL image
@@ -38,13 +17,9 @@ User can only delete his own project
 - [x] User Authentication
   - [x] Signup
   - [x] Login
-  - [ ] Reset Password (3 steps)
-  - [ ] Forget Password
-  - [ ] Verify
-  - [ ] Update/change password
-- [ ] Projects
-
-## User
+  - [x] Reset Password (3 steps)
+  - [x] Verify
+  - [x] Update/change password
 
 - [ ] Upload
   - [ ] Upload a profile picture (use sharp to crop image to circular width)
@@ -68,7 +43,3 @@ User can only delete his own project
 - [ ] Notifications
 
 ## Ideas
-
-- invite a collab with you on a project
-
-- Book tracking web application (for me)

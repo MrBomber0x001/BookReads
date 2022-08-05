@@ -31,5 +31,55 @@ export const getAllReaders = async (req, res, next) => {
 
 export const likeReview = async (req, res, next) => {
     // find review First
+}
+
+
+
+
+export const getAllFollowers = async (req, res, next) => {
+
+}
+
+
+export const sendFriendRequest = async (req, res, next) => {
+
+}
+
+export const acceptFriendRequest = async (req, res, next) => {
+
+}
+
+export const declineFriendRequest = async (req, res, next) => {
+
+}
+
+
+export const getAllFollowing = async (req, res, next) => {
+
+}
+
+export const addNewFollowing = async (req, res, next) => {
+
+}
+
+export const deleteFollowing = async (req, res, next) => {
+
+}
+
+export const deleteFollower = async (req, res, next) => {
+
+}
+
+export const changeAccountPrivacy = async (req, res, next) => {
+
+}
+
+
+export const sendClubJoinRequest = async (req, res, next) => {
+
+}
+
+
+export const leaveClub = async (req, res, next) => {
 
 }

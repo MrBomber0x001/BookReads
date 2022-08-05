@@ -7,7 +7,7 @@ export const verifyToken = async (req, res, next) => {
         const authToken = req.headers['authorization'];
         console.log(authToken);
         const token = authToken ? authToken.split(" ")[1] : '';
-        const decoded = jwt.verify(token, "secret");
+        const decoded = jwt.verify(token, "secret"); // env variable
         console.log(decoded);
         let user;
         // switch (decoded.person) {

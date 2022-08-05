@@ -26,7 +26,8 @@ export const Store = sequelize.define("stores", {
         defaultValue: false
     },
     location: {
-        type: DataTypes.STRING
+        type: DataTypes.STRING,
+        comment: "live location of the store, so the user can search easily using google maps"
     },
     verificationToken: {
         type: DataTypes.INTEGER
