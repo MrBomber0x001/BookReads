@@ -13,7 +13,7 @@ Head over to [Documentation.md](./Doc/README.md) For A detailed Documentation fo
 
 ## DB Schema Diagram
 
-![Schema Diagram](./schema.png)
+![Schema Diagram](./Doc/schema.png)
 
 ## API endpoints
 
