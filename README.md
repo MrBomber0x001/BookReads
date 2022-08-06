@@ -9,7 +9,7 @@ just for readers and to readers.
 
 ## Documentation and Project Structure
 
-Head over to [Documentation.md](./Doc.md) For Database, API endpoints, Building and Running, etc.
+Head over to [Documentation.md](./Doc/README.md) For Database, API endpoints, Building and Running, etc.
 
 ## Demo and Features
 
