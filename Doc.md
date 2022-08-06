@@ -4,13 +4,10 @@
 
 ### DB Diagram
 
-### Queries
-
 ## API endpoints
 
 ## Building and Running
 
-## Running PostgreSQL image
 
 ## Logs
 
@@ -30,8 +27,8 @@
   - [ ] Follow/unFollow (Friends) Other Readers
   - [x] Make Shelfs and add Books to them
   - [ ] Make Request to join a group (if he's a group owner, he can see list of Request) [group owner make(generate) an invitation link users can use to join club ]
-  - readers can send join request to the club
-  - club owner get notified [...] need to join your club <accept, decline>
+    - readers can send join request to the club
+     - club owner get notified [...] need to join your club <accept, decline>
     - can club private (member), public (public)
     - delete reader from club
     - club has a category (History, science)
