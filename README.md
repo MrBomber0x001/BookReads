@@ -15,6 +15,7 @@
 Head over to [Documentation.md](./Doc/README.md) For A detailed Documentation for The Database, API endpoints, Building and Running, etc.
 
 ## DB Schema Diagram
+Head over to <a href="https://dbdiagram.io/d/62e5c24bf31da965e848355e">dbdiagram</a> for detailed relationships & definitions <br>
 
 ![Schema Diagram](./Doc/schema.png)
 
