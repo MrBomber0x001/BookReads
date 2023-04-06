@@ -133,7 +133,7 @@ export const signupReader = async (req, res, next) => {
 
     const doesExist = await Reader.findOne({ where: { email: data.email } });
     if (doesExist) {
-        return next(new ErrorHandler(`this email already exists`, 409));
+        return next(new ErrorResponse(`this email already exists`, 409));
     }
 
     const hashedPassword = await bcrypt.hash(data.password, 12);
@@ -253,7 +253,7 @@ export const signupStore = async (req, res, next) => {
     }
 }
 
-/*
+
 /**
  * @Author Yousef Meska
  * @desc Verify Email

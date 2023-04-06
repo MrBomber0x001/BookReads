@@ -40,5 +40,5 @@ Book.hasMany(Review, {
 });
 Review.belongsTo(Book, {
     foreignKey: "bookId",
-    targetId: "readerId"
+    targetId: "id"
 });
